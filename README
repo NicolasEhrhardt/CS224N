@@ -1,8 +1,0 @@
-I implemented two version of each model: one version not optimized, and a second optimized version (with "Parallel" suffix). The optimized version is multi-threaded and its efficiency will depend on your machine. Modify the variable njobs according to the number of cores you have.
-
-To run: make sure that the variable DATA_PATH in the code is poiting to the right folder.
-
-test.sh: script to test the algorithm with in the given parameters
-testall.sh: generates the learning curves for the extra question.
-
-NOTE: log/ contains the log files of my last run to create the learning curves.
