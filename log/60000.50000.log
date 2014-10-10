@@ -1,0 +1,10 @@
+/// CS224n Word Alignment Tester ///
+Language: french
+Data path: data/french
+Evaluation set: test
+Using up to 60000 training sentences.
+Training set size: 60000
+Evaluation set size: 447
+Model: cs224n.wordaligner.IBMModel2Parallel
+cs224n.wordaligner.IBMModel2Parallel, Init lexical prob from IBM1
+cs224n.wordaligner.IBMModel1Parallel, Init at uniform

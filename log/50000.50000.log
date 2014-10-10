@@ -1,0 +1,22 @@
+/// CS224n Word Alignment Tester ///
+Language: french
+Data path: data/french
+Evaluation set: test
+Using up to 50000 training sentences.
+Training set size: 50000
+Evaluation set size: 447
+Model: cs224n.wordaligner.IBMModel2Parallel
+cs224n.wordaligner.IBMModel2Parallel, Init lexical prob from IBM1
+cs224n.wordaligner.IBMModel1Parallel, Init at uniform
+cs224n.wordaligner.IBMModel1Parallel, Training
+cs224n.wordaligner.IBMModel1Parallel, Iteration 1, epsilon 3.176e-04
+cs224n.wordaligner.IBMModel1Parallel, Iteration 2, epsilon 3.409e-04
+cs224n.wordaligner.IBMModel1Parallel, Iteration 3, epsilon 1.557e-04
+cs224n.wordaligner.IBMModel1Parallel, Iteration 4, epsilon 6.158e-05
+cs224n.wordaligner.IBMModel1Parallel, Iteration 5, epsilon 3.053e-05
+cs224n.wordaligner.IBMModel1Parallel, Iteration 6, epsilon 1.721e-05
+cs224n.wordaligner.IBMModel1Parallel, Iteration 7, epsilon 1.055e-05
+cs224n.wordaligner.IBMModel1Parallel, Iteration 8, epsilon 6.861e-06
+cs224n.wordaligner.IBMModel1Parallel, Iteration 9, epsilon 4.668e-06
+cs224n.wordaligner.IBMModel1Parallel, Iteration 10, epsilon 3.291e-06
+cs224n.wordaligner.IBMModel1Parallel, Iteration 11, epsilon 2.387e-06

@@ -1,0 +1,60 @@
+/// CS224n Word Alignment Tester ///
+Language: french
+Data path: data/french
+Evaluation set: test
+Using up to 90000 training sentences.
+Training set size: 90000
+Evaluation set size: 447
+Model: cs224n.wordaligner.IBMModel2Parallel
+cs224n.wordaligner.IBMModel2Parallel, Init lexical prob from IBM1
+cs224n.wordaligner.IBMModel1Parallel, Init at uniform
+cs224n.wordaligner.IBMModel1Parallel, Training
+cs224n.wordaligner.IBMModel1Parallel, Iteration 1, epsilon 2.549e-04
+cs224n.wordaligner.IBMModel1Parallel, Iteration 2, epsilon 2.914e-04
+cs224n.wordaligner.IBMModel1Parallel, Iteration 3, epsilon 1.304e-04
+cs224n.wordaligner.IBMModel1Parallel, Iteration 4, epsilon 5.136e-05
+cs224n.wordaligner.IBMModel1Parallel, Iteration 5, epsilon 2.516e-05
+cs224n.wordaligner.IBMModel1Parallel, Iteration 6, epsilon 1.400e-05
+cs224n.wordaligner.IBMModel1Parallel, Iteration 7, epsilon 8.494e-06
+cs224n.wordaligner.IBMModel1Parallel, Iteration 8, epsilon 5.491e-06
+cs224n.wordaligner.IBMModel1Parallel, Iteration 9, epsilon 3.724e-06
+cs224n.wordaligner.IBMModel1Parallel, Iteration 10, epsilon 2.621e-06
+cs224n.wordaligner.IBMModel1Parallel, Iteration 11, epsilon 1.898e-06
+cs224n.wordaligner.IBMModel1Parallel, Iteration 12, epsilon 1.409e-06
+cs224n.wordaligner.IBMModel1Parallel, Iteration 13, epsilon 1.069e-06
+cs224n.wordaligner.IBMModel1Parallel, Iteration 14, epsilon 8.252e-07
+cs224n.wordaligner.IBMModel2Parallel, Init at random for position probabilities
+cs224n.wordaligner.IBMModel2Parallel, Training
+cs224n.wordaligner.IBMModel2Parallel, Iteration 1, epsilon lexical 3.007e-03, epsilon position 4.824e-03
+cs224n.wordaligner.IBMModel2Parallel, Iteration 2, epsilon lexical 1.087e-04, epsilon position 2.446e-04
+cs224n.wordaligner.IBMModel2Parallel, Iteration 3, epsilon lexical 4.854e-05, epsilon position 1.109e-04
+cs224n.wordaligner.IBMModel2Parallel, Iteration 4, epsilon lexical 2.643e-05, epsilon position 6.546e-05
+cs224n.wordaligner.IBMModel2Parallel, Iteration 5, epsilon lexical 1.664e-05, epsilon position 4.492e-05
+cs224n.wordaligner.IBMModel2Parallel, Iteration 6, epsilon lexical 1.163e-05, epsilon position 3.137e-05
+cs224n.wordaligner.IBMModel2Parallel, Iteration 7, epsilon lexical 9.072e-06, epsilon position 2.440e-05
+cs224n.wordaligner.IBMModel2Parallel, Iteration 8, epsilon lexical 7.461e-06, epsilon position 1.896e-05
+cs224n.wordaligner.IBMModel2Parallel, Iteration 9, epsilon lexical 5.950e-06, epsilon position 1.602e-05
+cs224n.wordaligner.IBMModel2Parallel, Iteration 10, epsilon lexical 4.763e-06, epsilon position 1.408e-05
+cs224n.wordaligner.IBMModel2Parallel, Iteration 11, epsilon lexical 3.875e-06, epsilon position 1.236e-05
+cs224n.wordaligner.IBMModel2Parallel, Iteration 12, epsilon lexical 3.192e-06, epsilon position 1.051e-05
+cs224n.wordaligner.IBMModel2Parallel, Iteration 13, epsilon lexical 2.874e-06, epsilon position 9.360e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 14, epsilon lexical 2.443e-06, epsilon position 7.833e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 15, epsilon lexical 2.111e-06, epsilon position 6.844e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 16, epsilon lexical 1.781e-06, epsilon position 5.488e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 17, epsilon lexical 1.582e-06, epsilon position 5.463e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 18, epsilon lexical 1.431e-06, epsilon position 4.736e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 19, epsilon lexical 1.226e-06, epsilon position 4.058e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 20, epsilon lexical 1.084e-06, epsilon position 4.271e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 21, epsilon lexical 9.529e-07, epsilon position 3.618e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 22, epsilon lexical 8.634e-07, epsilon position 3.236e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 23, epsilon lexical 7.736e-07, epsilon position 2.694e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 24, epsilon lexical 7.038e-07, epsilon position 2.502e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 25, epsilon lexical 6.598e-07, epsilon position 2.155e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 26, epsilon lexical 6.224e-07, epsilon position 2.193e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 27, epsilon lexical 5.611e-07, epsilon position 2.011e-06
+cs224n.wordaligner.IBMModel2Parallel, Iteration 28, epsilon lexical 5.263e-07, epsilon position 1.863e-06
+
+### Evaluation Results ###
+Precision:	0.6962
+Recall:	0.8036
+AER:	0.2646
