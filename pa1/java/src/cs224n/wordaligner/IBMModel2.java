@@ -101,16 +101,22 @@ public class IBMModel2 implements WordAligner {
                     Pair<Integer, Pair<Integer, Integer>> positionPair = new Pair<Integer, Pair<Integer, Integer>>(i, pairLength);
 
                     Counter<String> posterior = new Counter<String>();
-                    for (int j = 0; j < sourceWords.size(); j++) {
-                        String sourceWord = sourceWords.get(j);
-                        posterior.incrementCount(sourceWord, lexicalProb.getCount(sourceWord, targetWord) * positionProb.getCount(positionPair, j));
-                    }
-                    posterior = Counters.normalize(posterior);
+                    double norm = 0.;
 
+                    // computing posterior and total normalization
                     for (int j = 0; j < sourceWords.size(); j++) {
                         String sourceWord = sourceWords.get(j);
-                        countLexical.incrementCount(sourceWord, targetWord, posterior.getCount(sourceWord));
-                        countPosition.incrementCount(positionPair, j, posterior.getCount(sourceWord));
+                        double sourceIncrement = lexicalProb.getCount(sourceWord, targetWord) * positionProb.getCount(positionPair, j);
+                        posterior.incrementCount(sourceWord, sourceIncrement);
+                        norm += sourceIncrement;
+                    }
+
+                    // updating counts
+                    for (int j = 0; j < sourceWords.size(); j++) {
+                        String sourceWord = sourceWords.get(j);
+                        double sourceNormalizedIncrement = posterior.getCount(sourceWord) / norm;
+                        countLexical.incrementCount(sourceWord, targetWord, sourceNormalizedIncrement);
+                        countPosition.incrementCount(positionPair, j, sourceNormalizedIncrement);
                     }
                 }
             }
@@ -125,7 +131,7 @@ public class IBMModel2 implements WordAligner {
             System.out.println(String.format(
                     "%s, Iteration %d, epsilon lexical %6.3e, epsilon position %6.3e",
                     this.getClass().getName(), iter, epsLexicalProb, epsPositionProb));
-            if (epsLexicalProb < 1.e-6 && epsPositionProb < 1.e-6) {
+            if (epsLexicalProb < 2.e-6 && epsPositionProb < 2.e-6) {
                 break;
             }
         }

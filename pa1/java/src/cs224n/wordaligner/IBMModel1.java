@@ -82,13 +82,15 @@ public class IBMModel1 implements WordAligner {
 
                 for (String targetWord: targetWords) {
                     Counter<String> posterior = new Counter<String>();
+                    double norm = 0.;
                     for (String sourceWord: sourceWords) {
-                        posterior.incrementCount(sourceWord, lexicalProb.getCount(sourceWord, targetWord));
+                        double sourceIncrement = lexicalProb.getCount(sourceWord, targetWord);
+                        posterior.incrementCount(sourceWord, sourceIncrement);
+                        norm += sourceIncrement;
                     }
-                    posterior = Counters.normalize(posterior);
 
                     for (String sourceWord: sourceWords) {
-                        countLexical.incrementCount(sourceWord, targetWord, posterior.getCount(sourceWord));
+                        countLexical.incrementCount(sourceWord, targetWord, posterior.getCount(sourceWord) / norm);
                     }
                 }
             }

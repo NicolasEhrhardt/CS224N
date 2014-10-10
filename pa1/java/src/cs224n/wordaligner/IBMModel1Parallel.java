@@ -93,9 +93,10 @@ public class IBMModel1Parallel implements WordAligner {
                             // Add one null word per sentence pair
                             sourceWords.add(NULL_WORD);
 
-                            double norm = 0.;
                             for (String targetWord : targetWords) {
                                 Counter<String> posterior = new Counter<String>();
+                                double norm = 0.;
+
                                 for (String sourceWord : sourceWords) {
                                     double sourceIncrement = lexicalProb.getCount(sourceWord, targetWord);
                                     posterior.incrementCount(sourceWord, sourceIncrement);
