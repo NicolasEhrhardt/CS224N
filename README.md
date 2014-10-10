@@ -6,7 +6,7 @@ I implemented two versions of each model: one version not optimized, and a secon
 Run
 ===
 
-I created two script for conveniency:
+I created two scripts for conveniency:
 
     - test.sh: script to test the algorithm with in the given parameters
     - testall.sh: generates the learning curves for the extra question.
