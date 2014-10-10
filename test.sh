@@ -1,5 +1,5 @@
 #!/bin/bash
-data="$data/"
+data="data/"
 
 case "$1" in
   base)
