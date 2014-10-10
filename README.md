@@ -9,7 +9,6 @@ Run
 I created two script for conveniency:
 
     - test.sh: script to test the algorithm with in the given parameters
-    
     - testall.sh: generates the learning curves for the extra question.
 
 To run: make sure that the variable $data in the script 'test.sh' is set to the right location.
