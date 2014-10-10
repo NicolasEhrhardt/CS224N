@@ -28,7 +28,6 @@ public class SameWordFeature implements RuleFeaturizer<IString, String> {
        List<FeatureValue<String>> features = Generics.newLinkedList();
 
        // ON - WE
-
        boolean on = false;
         for (IString word: f.sourcePhrase) {
             if (word.toString().equals("on")) {
